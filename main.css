@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: all .6s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    transition: all 1.2s ease-in-out;
+    background-position:  left bottom top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 , p{
+    color: #000000;
+    transition: all .5s ease-in-out;
+}
+
+
+
+
+/* global button style start */
+.btn{
+    padding: 8px 15px;
+    border: 1px solid #434343;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.btn:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(.99);
+    background-color: antiquewhite;
+}
+
+
+
+.btn:active{
+    transition: all .3s ease-in-out;
+    transform: scale(.95);
+}
+/* global button style end */
+
+
+
+/* *sign-up to sign-in event style start* */
+
+
+
+
+
+
+
+/* *sign-up to sign-in event style end* */
+
+
+
+header{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header .buttons{
+    gap: 15px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .buttons i {
+    font-size: 30px;
+    padding: 3px;
+    border-radius: 20px;
+    border: transparent;
+}
+
+
+header .buttons .bac{
+    position: absolute;
+    left: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    padding: 0 5px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #b9b9b969;
+}
+header .buttons .bac i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+/* section style start */
+section{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+}
+
+section .container{
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:400px;
+    height: 70%;
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px #f9f9f9;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(15.5px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    overflow: hidden;
+    transition: all .8s ease-in-out;
+    
+}
+
+
+
+section .container   h1{
+    display: block;
+    margin-top: 15px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+section .container  .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+
+section .container  .icons a img:hover{
+    transition: all .3s ease-in-out;
+    border-bottom: 3px solid black ;
+    border-radius: 0;
+    border-spacing: 1px;
+    padding: 0;
+}
+
+section .container  .icons a:active{
+    transform: scale(.96);
+}
+
+
+section .container  .icons a img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    max-width: 100%;
+}
+
+
+section .container   #form-register{
+    margin-top:25px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 222;
+}
+
+
+section .container   #form-login{
+    z-index: 333;
+    margin-top:25px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.reg{
+    display: none;
+    transition: all .6s ease-in-out;
+
+}
+.log{
+    display: none;
+    transition: all .6s ease-in-out;
+
+}
+
+section .container input{
+    font-size: 12px;
+    font-weight: 400;
+    padding: 12px 100px 12px 20px;
+    border: 1px solid #a7a7a7e7;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #000000;
+}
+
+section .container  input:focus{
+    -webkit-box-shadow: 0px 0px 63px -30px rgba(172, 174, 97, 0.99);
+    -moz-box-shadow: 0px 0px 63px -30px rgba(172, 174, 97, 0.99);
+    box-shadow: 0px 0px 63px -30px rgba(172, 174, 97, 0.99);
+}
+
+
+
+
+.content{
+    transition: all .6s ease-in-out;
+    width: 100vw;
+    left: 200px;
+    display: flex;
+}
+
+.content .content-data {
+    transition: all .6s ease-in-out;
+    width: 90%;
+    overflow: hidden;
+    position:absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 10px;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.9px);
+    -webkit-backdrop-filter: blur(10.9px);
+}
+
